@@ -171,7 +171,7 @@ app.post('/create_user', async (req, res) => {
             const newUser = new userModel({ email, userpwd, verificationStatus, verificationCode });
             await newUser.save();
             res.status(201).send(newUser);
-            let emailContent = `Click here https://729df12d-1df7-4184-b21c-a187b10f67d4.e1-us-east-azure.choreoapps.dev/verify_email/${(newUser._id).toString()} to verify email`;
+            let emailContent = `Click here https://4ee10bc6-e793-40a2-9db4-0592c85da2c3.e1-us-east-azure.choreoapps.dev/verify_email/${(newUser._id).toString()} to verify email`;
             let rsSendEmail = sendEmail(email, emailContent);
         }
     } catch (err) {
