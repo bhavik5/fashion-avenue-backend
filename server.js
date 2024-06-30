@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect('mongodb+srv://admin:admin@fashion-avenue.ibcesxn.mongodb.net/?retryWrites=true&w=majority&appName=fashion-avenue')
+mongoose.connect('mongodb+srv://admin1:admin1@fashion-avenue.ibcesxn.mongodb.net/?retryWrites=true&w=majority&appName=fashion-avenue')
 .then(() => {
     console.log('DB Connected!');
 })
