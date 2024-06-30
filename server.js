@@ -382,7 +382,7 @@ app.get('/verify_session/:email', async (req, res) => {
     }
 });
 
-const PORT = 5005;
+const PORT = 8080;
 app.listen(PORT, () => {
     console.log(`Server is listening PORT : ${PORT}`);
 });
